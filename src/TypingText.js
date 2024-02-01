@@ -24,7 +24,7 @@ function TypingText({text}) {
  }, [text]);
  return(
   <div>
-    <p ref={textRef}>{text}</p>
+    <h2 ref={textRef}>{text}</h2>
   </div>
  )
 }

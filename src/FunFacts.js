@@ -7,10 +7,15 @@ import TypingText from "./TypingText";
 const FunFacts = () => {
     const funFactsArray =[
         "Did you know  that our farm has been family-owned for over three generations?",
-        "Every product in our store is carefully handpicked to ensure freshness and quality.",
-        "Join our loyalty program to receive exclusive discounts and special offers.",
-        "We host seasonal events at our farm, inviting the community to celebrate together.",
-        "Our farm animals areraised in a humane and athical manner, ensuring their well-being."
+        "Every product in our store is carefully handpicked.",
+        "Join our loyalty program to receive exclusive discounts.",
+        "Chickens can be extroverts.",
+        "We host seasonal events, inviting the community to celebrate together.",
+        "Our farm animals are raised in a humane and athical manner.",
+        "The best fertilizer is the farmer's shadow.",
+        "An apple tree can live for more than 100 years.",
+        "Pigs can be trained to perform tricks.",
+        
     ];
     const [currentFactIndex, setCurrentFactIndex] = useState(0);
     const handleClickNext = () =>{
