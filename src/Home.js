@@ -1,5 +1,6 @@
 import './App.css';
 import React from "react";
+import video from "./home.mp4";
 import SliderComponent from './SliderComponent';
 import FunFacts from './FunFacts';
 
@@ -12,7 +13,9 @@ function Home(){
         <header>
             <h1> FLAVORS OF THE FIELDS</h1>
         </header>
-
+        <video autoPlay muted loop>
+         <source src={video} type="video/mp4" />
+      </video>
         <main>
         <h2>Welcome To Our Little Farm Store!</h2>
         <h3>Discover a world of freshness and flavor at our farm store. We take pride in cultivating the finest produce with care and dedication, delivering it directly from our fields to your table.</h3>

@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import broccoli from './BROCCOLI.PNG';
 import { useState } from 'react';
 import TypingText from "./TypingText";
 
@@ -23,16 +22,13 @@ const FunFacts = () => {
         setCurrentFactIndex(newIndex);
     };
     return (
-        <div className="facts">
-            <img className="broccoli" src={broccoli} alt="broccoli"/>
         <div className="fun-facts-container">
             <h2>Fun Facts</h2>
             <TypingText text={funFactsArray[currentFactIndex]}/>
-          
             <button className="anotherFact" onClick={handleClickNext}>Another Fact</button>
         </div>
         
-        </div>
+
     );
 };
 

@@ -72,14 +72,12 @@ header{
   align-items: center;
   justify-content: center;
   font-size: 26px;
-  background: linear-gradient(-90deg, #789461, #F1E4C3);
+  background: transparent;
   margin: 0%;
   padding: 1%;
 }
 
-.broccoli {
-  width: 100%;
-}
+
 main{
   display: flex;
   flex-direction: column;
@@ -217,23 +215,20 @@ video {
 .fun-facts-container{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 1%;
-  margin: 2% 5% 5% 2%;
+  padding: 3px;
   text-shadow: 2px 2px 2px #FFD4B2;
   font-family: 'Paytone One', sans-serif;
   text-transform: uppercase;
+  z-index: 1;
 }
 .facts{
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%
 }
-.funFacts{
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: bold;
-  text-shadow: 0px 2px 2px #789461;
-}
+
 .anotherFact{
   background-color: #789461;
   padding: 1%;
