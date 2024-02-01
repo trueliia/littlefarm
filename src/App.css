@@ -4,7 +4,7 @@ nav{
   justify-content: center;
   padding: 0.3%;
   font-family: 'Paytone One', sans-serif;
-
+  max-width: 100%;
 }
 
 .shop{
@@ -16,7 +16,7 @@ nav{
   background-color:#F1E4C3
 }
 .link{
-  padding: 7px 30px;
+  padding: 7px 50px;
   text-decoration:none;
   text-transform: uppercase;
   color: #F1E4C3;
@@ -257,6 +257,10 @@ footer{
   font-family: 'Paytone One', sans-serif;
 }
 @media all and (max-width:920px) {
+
+  .link{
+    padding: 7px 7px;
+   }
 .flyer{
       height: 120px;
       margin: 3px;
@@ -332,5 +336,7 @@ main{
   .cont{
     flex-direction: column;
   }
-
+  .link{
+    padding: 7px 7px;
+   }
 }
