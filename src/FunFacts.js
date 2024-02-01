@@ -24,7 +24,7 @@ const FunFacts = () => {
     };
     return (
         <div className="facts">
-            <img src={broccoli} alt="broccoli"/>
+            <img className="broccoli" src={broccoli} alt="broccoli"/>
         <div className="fun-facts-container">
             <h2>Fun Facts</h2>
             <TypingText text={funFactsArray[currentFactIndex]}/>
