@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import video from "./home.mp4";
+import video from "./assets/home.mp4";
 import SliderComponent from './SliderComponent';
 import FunFacts from './FunFacts';
 

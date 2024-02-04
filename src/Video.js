@@ -3,7 +3,7 @@ const VideoComponent = () => {
     return (
         <div>
             <video width="100%" height="auto" controls autoPlay>
-                <source src="./farmhands.mp4" type="video/mp4"/>
+                <source src="./assets/farmhands.mp4" type="video/mp4"/>
             </video>
         </div>
     )

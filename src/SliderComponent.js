@@ -3,8 +3,8 @@ import './App.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import previous from './previous.png';
-import next from './next.png';
+import previous from './assets/previous.png';
+import next from './assets/next.png';
 
 const SliderComponent = () => {
     const CustomNextArrow = (props) => (

@@ -1,4 +1,4 @@
-import video from './farmhands.mp4';
+import video from './assets/farmhands.mp4';
 function About(){
     return (<div className="container">
         <div className="cont">

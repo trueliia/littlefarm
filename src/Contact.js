@@ -1,5 +1,5 @@
 import ContactForm from "./ContactForm";
-import image from './form.png';
+import image from './assets/form.png';
 
 function Contact(){
     return(
