@@ -3,7 +3,7 @@ import './App.css';
 
 const calculateTimeRemaining = () => {
   const currentDate = new Date();
-  const endOfSaleDate = new Date(currentDate.getFullYear(), 1, 25); // endOfSale is on February 25th
+  const endOfSaleDate = new Date(currentDate.getFullYear(), 6, 10); // endOfSale is on July 10th
 
   if (currentDate > endOfSaleDate) {
     endOfSaleDate.setFullYear(currentDate.getFullYear() + 1);

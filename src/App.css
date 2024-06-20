@@ -1,11 +1,86 @@
-nav{
+.navbar {
   background: #789461;
   display: flex;
-  justify-content: center;
-  padding: 0.3%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
   font-family: 'Paytone One', sans-serif;
-  max-width: 100%;
 }
+
+.burger-menu {
+  display: block; /* Show burger menu icon */
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu {
+  display: none; /* Initially hide menu items */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #789461;
+  padding: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu.open {
+  display: flex; /* Show menu items when open */
+  flex-direction: column;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.link:hover {
+  background-color: #a0c884;
+}
+
+.cartIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.working-hours {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0,128,0, 0.5);
+}
+
+.working-hours p {
+  margin: 5px 0;
+}
+
 
 .shop{
   border: none;
@@ -23,25 +98,11 @@ nav{
   text-shadow: 2px 2px 4px black;
 }
 
-.products {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.product-card {
-  padding: 2%;
-  flex-grow: 1;
-  flex-basis: 16%;
-}
 
 body {
   background-color: #F1E4C3;
 }
 
-.cont {
-  display: flex;
-  justify-content: center;
-}
 .back {
   background-color: #FFD4B2;
   padding: 20px;
@@ -105,8 +166,6 @@ main{
   margin-bottom: 1vh;
   padding: 5px;
 
-
-
 }
 form {
   margin: auto;
@@ -145,8 +204,6 @@ textarea{
   cursor: pointer;
 }
 
-
-
 button {
   margin: 10px;
 }
@@ -178,20 +235,10 @@ video {
   text-shadow: 2px 2px 4px #FFD4B2;
   margin-top: 1%;
 }
-.flyer{
-  height: 280px;
-  width: 340px;
-  margin: 3px;
-  transition: 1s;
-}
 
-.flyer:hover{
-  transform: scale(2);
-}
-.flyer-group{
+.cont {
   display: flex;
   justify-content: center;
-  opacity: 80%;
 }
 
 .custom-arrow{
@@ -222,6 +269,7 @@ video {
   font-family: 'Paytone One', sans-serif;
   text-transform: uppercase;
   z-index: 1;
+  
 }
 .facts{
   display: flex;
@@ -245,6 +293,7 @@ video {
 }
 footer{
   display: flex;
+  justify-content: flex-end;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -259,15 +308,7 @@ footer{
   .link{
     padding: 7px 7px;
    }
-.flyer{
-      height: 120px;
-      margin: 3px;
-      transition: 1s;
-  }
 
-  .flyer:hover{
-  transform: scale(1.8);
-}
 .sale {
   display: flex;
   flex-direction: column;
@@ -302,18 +343,8 @@ main{
 }
 }
 @media all and (max-width:500px) {
-.flyer-group{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
 
-  .flyer{
-      width: 230px;
-      height: 100%;
-  }
-
-  .sale {
+   .sale {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -337,4 +368,28 @@ main{
   .link{
     padding: 7px 7px;
    }
+   
+   .categories{
+    display:flex;
+    flex-direction: column;
+    }
+}
+
+@media (min-width: 1020px) {
+  .burger-menu {
+    display: none; /* Hide burger menu icon for larger screens */
+  }
+
+  .menu {
+    display: flex; /* Ensure menu items are shown on larger screens */
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu .link {
+    padding: 0 10px;
+  }
 }

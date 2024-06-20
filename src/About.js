@@ -1,4 +1,6 @@
+import SliderComponent from './SliderComponent';
 import video from './assets/farmhands.mp4';
+
 function About(){
     return (<div className="container">
         <div className="cont">
@@ -17,15 +19,8 @@ function About(){
       
         <h3>Sincerely, <br/> Anna and Fred Klassen</h3>
       </div>
-      <div className="flyer-group">
-      <img className="flyer" src="https://images.unsplash.com/photo-1624720114708-0cbd6ee41f4e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Greenhouse"/>
-      <img className="flyer" src="https://images.unsplash.com/photo-1573426667638-18ccdd988a39?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vegatables"/>
-      <img className="flyer" src="https://plus.unsplash.com/premium_photo-1669122601993-449a0a3b70c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Carrots"/>
-      </div>
-      <div className="flyer-group">
-      <img className="flyer" src="https://images.unsplash.com/photo-1486328228599-85db4443971f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cabbage"/>
-      <img className="flyer" src="https://images.unsplash.com/photo-1471194402529-8e0f5a675de6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tomatoes"/>
-      <img className="flyer" src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pig"/>
+      <div>
+      <SliderComponent/>
       </div>
 
       </div>

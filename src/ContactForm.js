@@ -9,8 +9,8 @@ const ContactForm = () =>{
             </label>
             <br/>
             <label>
-                Your Order:
-                <textarea name="message" placeholder="Insert your grocery list here..." />
+                Your Message:
+                <textarea name="message" placeholder="Insert your message here..." />
             </label>
             <button className="formButton" type="submit">SUBMIT</button>
         </form>

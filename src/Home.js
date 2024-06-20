@@ -1,7 +1,6 @@
 import './App.css';
 import React from "react";
 import video from "./assets/home.mp4";
-import SliderComponent from './SliderComponent';
 import FunFacts from './FunFacts';
 
 
@@ -22,9 +21,18 @@ function Home(){
         <h3>Explore a variety of locally grown fruits, vegetables, and more. Our commitment to sustainable farming practices ensures that each product is not only delicious but also environmentally concious.</h3>
         <h3>Join us on a journey to savor the goodness of nature. From our family to yours, we invite you to experience the difference of farm-fresh quality.</h3>
         </main>
-        
-        <FunFacts/>
-        <SliderComponent/>
+
+        <section>
+            <FunFacts/>
+            
+                <div className="working-hours">
+                    <h2>Working Hours</h2>
+                    <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+                    <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                    <p><strong>Sunday:</strong> Closed</p>
+                   
+                </div>
+        </section>
 
         <footer>
             <p className="rights">&copy; 2024 Flavors Of The Fields Website. All rights reserved. Created by Julia Naumova.</p>
