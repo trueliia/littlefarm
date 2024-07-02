@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,31 +15,19 @@ import YourCart from './YourCart';
 
 
 function App(){
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-
+  
   return (
     <Router>
-      <nav className="navbar">
-        <div className="burger-menu" onClick={toggleMenu}>
-          <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
-          <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
-          <div className={`bar ${isMenuOpen ? 'open' : ''}`}></div>
-        </div>
-        <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
-          <Link to="/" className='link' onClick={closeMenu}>Home</Link>
-          <Link to="/shop" className='link' onClick={closeMenu}>Shop</Link>
-          <Link to="/about" className='link' onClick={closeMenu}>About Us</Link>
-          <Link to="/contact" className='link' onClick={closeMenu}>Contact</Link>
-          <Link to="/yourcart" className='link' onClick={closeMenu}>
-            <img className="cartIcon" src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-shopping-cart-cyber-monday-xnimrodx-lineal-color-xnimrodx.png" alt='cart'/>
+      <nav className="hamnav">
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger"/>
+        <div id="hamitems">
+          <Link to="/" className='link'>Home</Link>
+          <Link to="/shop" className='link'>Shop</Link>
+          <Link to="/about" className='link'>About Us</Link>
+          <Link to="/contact" className='link'>Contact</Link>
+          <Link to="/yourcart" className='link'>
+          <img className="cartIcon" src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-shopping-cart-cyber-monday-xnimrodx-lineal-color-xnimrodx.png" alt='cart'/>
           </Link>
         </div>
       </nav>
