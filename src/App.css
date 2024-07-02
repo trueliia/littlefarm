@@ -20,10 +20,14 @@
 }
 
 
-.link {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
+.link{
+  padding: 7px 50px;
+  text-decoration:none;
+  text-transform: uppercase;
+  color: #F1E4C3;
+  text-shadow: 2px 2px 4px black;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bolder;
 }
 
 .link:hover {
